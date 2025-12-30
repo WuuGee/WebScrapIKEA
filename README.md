@@ -52,4 +52,23 @@ Before running this script, ensure you have the following installed:
 
 2. **Run the Script**
    ```bash
-   pip install selenium pandas beautifulsoup4 requests openpyxl
+   python Scrap.py
+
+3. **Check the Output**
+   The script will generate (or append to) a file named StoreProduct.xlsx in the same directory containing the scraped data.
+
+## ⚠️ Known Issues / Troubleshooting
+   1. ChromeDriver Version: If you get a "SessionNotCreatedException", it usually means your Chrome browser auto-updated and your ChromeDriver is now old. Download the latest  ChromeDriver and place it in your path.
+   2. Page Load Speeds: The script uses time.sleep() and WebDriverWait. If your internet connection is slow, you may need to increase the sleep timers in the code to prevent          elements from not being found.
+   3. IKEA Website Updates: Web scrapers are sensitive to HTML structure changes. If IKEA changes their class names (e.g., pip-header-section__title--big), the script may need        updating.
+
+## 📝 Disclaimer
+   This tool is for educational purposes only.
+   Please respect the website's robots.txt file.
+   Avoid sending too many requests in a short period to prevent overwhelming the server.
+   The author is not responsible for any misuse of this tool or potential IP bans resulting from excessive scraping.
+
+## 📄 License
+   [MIT](https://choosealicense.com/licenses/mit/)
+
+## <img src="https://media.giphy.com/media/hvRJCLFzcasrR4ia7z/giphy.gif" width="30"> Have Fun!!! <img src="https://media.giphy.com/media/hvRJCLFzcasrR4ia7z/giphy.gif" width="30">
